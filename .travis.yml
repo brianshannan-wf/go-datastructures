@@ -14,8 +14,7 @@ install:
 script: go test -race -v -cover $(glide novendor)
 
 env:
-- GOMAXPROCS=8
-- GORACE="halt_on_error=1"
+- GOMAXPROCS=8 GORACE="halt_on_error=1"
 
 notifications:
   email: false
